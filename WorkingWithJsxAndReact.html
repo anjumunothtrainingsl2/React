@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <h1>Working with React and jsx</h1>
+    <div id="react-container"></div>
+    <script type="text/babel">
+        var myElements=<div>
+            <h1>Welcome to jsx</h1>
+            <a href="https://reactjs.org/docs/add-react-to-a-website.html">Go to react's official page</a>
+            </div>
+        ReactDOM.render(myElements,document.getElementById("react-container"))
+    </script>
+</body>
+</html>
+
+<!--
+    jsx has to be converted to ES5 or es6
+    babel -- transpiler translator and compiler ; convert jsx to js code and compile; list down syntactical errors
+-->

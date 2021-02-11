@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+</head>
+<body>
+    <h1> Working with React</h1>
+    <div id="react-container"></div>
+    <script>
+        //3 params; what kind of element; attributes ; text
+        var h1Element=React.createElement("h1",null,"Welcome to the training on React");
+        var anchorElement=React.createElement("a",{href:"https://reactjs.org/docs/cdn-links.html"},"Go to react cdn link")
+        var mainElement=React.createElement("div",null,[h1Element,anchorElement])
+        // render -- 2 params; what to render; where to render
+        ReactDOM.render(mainElement,document.getElementById("react-container"));// return VIRTUALDOM
+        </script>
+    </body>
+</html>
